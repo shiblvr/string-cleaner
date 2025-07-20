@@ -6,7 +6,7 @@
 pNtWriteVirtualMemory       NtWriteVirtualMemory       = (pNtWriteVirtualMemory)GetProcAddress(GetModuleHandleA("ntdll.dll"), "NtWriteVirtualMemory");
 pNtReadVirtualMemory        NtReadVirtualMemory        = (pNtReadVirtualMemory)GetProcAddress(GetModuleHandleA("ntdll.dll"), "NtReadVirtualMemory");
 pNtQueryVirtualMemory       NtQueryVirtualMemory       = (pNtQueryVirtualMemory)GetProcAddress(GetModuleHandleA("ntdll.dll"), "NtQueryVirtualMemory");
-pNtClose				    NtClose                    = (pNtClose)GetProcAddress(GetModuleHandleA("ntdll.dll"), "NtClose");
+pNtClose	            NtClose                    = (pNtClose)GetProcAddress(GetModuleHandleA("ntdll.dll"), "NtClose");
 pNtOpenProcess              NtOpenProcess              = (pNtOpenProcess)GetProcAddress(GetModuleHandleA("ntdll.dll"), "NtOpenProcess");
 
 
