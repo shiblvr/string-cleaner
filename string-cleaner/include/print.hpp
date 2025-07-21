@@ -200,8 +200,8 @@ namespace wprint {
 		std::wcout << L"*";
 		SetColor(WHITE);
 		std::wcout << L"] ";
-
-		std::wcout << std::vformat(_Fmt, std::make_wformat_args(std::forward<_Types>(_Args)...));
+		
+		std::wcout << std::vformat(_Fmt, std::make_wformat_args(std::forward<_Types>(_Args)...)) << L'\n';
 	}
 
 	template<typename... _Types>
