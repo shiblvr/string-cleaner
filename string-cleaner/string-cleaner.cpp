@@ -79,6 +79,7 @@ int main()
 			if (is_num(procName)) {
 				DWORD PID = std::stoul(procName);
 				
+
 				HANDLE hProc = OpenProcess(PROCESS_QUERY_INFORMATION, FALSE, PID);
 				
 				if (!hProc) {
@@ -93,7 +94,9 @@ int main()
 				std::wstring procName = u::GetProcessName(PID);
 				x.insert({ procName, PID});
 			}
-			wprint::errorln(L"Invalid process: {} ", procName);
+			else {
+				wprint::errorln(L"Invalid process: {} ", procName);
+			}
 		}
 	}
 
